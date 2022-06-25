@@ -13,9 +13,9 @@ function App() {
                 <Intervalo></Intervalo>
             </div>
             <div className='linha'>
-                <Media></Media>
-                <Soma></Soma>
-                <Sorteio></Sorteio>
+                <Media min={0} max={10}></Media>
+                <Soma min={0} max={10}></Soma>
+                <Sorteio min={0} max={10}></Sorteio>
             </div>
         </div>
     );
