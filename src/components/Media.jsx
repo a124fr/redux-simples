@@ -3,9 +3,8 @@ import Card from './Card'
 import { connect } from 'react-redux'
 
 const Media = props => {
-    console.log(props.numeros);
+    const { min, max } = props;
     
-    const {min, max} = props.numeros;    
     return (
         <Card title='Médio dos Números' green>
             <div>
@@ -19,7 +18,8 @@ const Media = props => {
 }
 
 const mapStateToProps = state => ({
-    numeros: state.numeros
+    min: state.numeros.min,
+    max: state.numeros.max
 })
 
 
